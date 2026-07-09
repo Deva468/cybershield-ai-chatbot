@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+    <div class="header-top">
+
+        <h1>🛡 CyberShield AI</h1>
+        
+        <button id="clearBtn">🗑 Clear</button>
+
+    </div>
+    
+
+    <p>Cyber Security Awareness Chatbot</p>
+
+</div>
+
+    <div class="chat-box" id="chatBox">
+
+        <div class="bot-message">
+            👋 Hello! Ask me anything about Cyber Security.
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+        type="text"
+        id="userInput"
+        placeholder="Ask about phishing, malware, ransomware..."
+        >
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

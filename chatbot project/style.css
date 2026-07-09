@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    background:#0d1117;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+}
+
+.container{
+
+    width:420px;
+
+    background:#161b22;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 25px rgba(0,255,255,.2);
+}
+
+.header{
+
+    background:#00c896;
+
+    padding:18px;
+
+    text-align:center;
+
+    color:white;
+}
+
+.chat-box{
+
+    height:450px;
+
+    overflow-y:auto;
+
+    padding:15px;
+
+    background:#0d1117;
+}
+
+.bot-message{
+
+    background:#1f2937;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:12px;
+
+    width:80%;
+}
+
+.user-message{
+
+    background:#00c896;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:12px;
+
+    margin-left:auto;
+
+    width:80%;
+}
+
+.input-area{
+
+    display:flex;
+
+    padding:10px;
+
+    background:#161b22;
+}
+
+input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:8px;
+}
+
+button{
+
+    margin-left:10px;
+
+    padding:12px 18px;
+
+    background:#00c896;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+button:hover{
+
+    background:#00a97d;
+}
+#typing {
+    color: #00ffcc;
+    font-style: italic;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.4;
+    }
+}
+.header-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+#clearBtn{
+
+    background:#ff4d4d;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+#clearBtn:hover{
+
+    background:#cc0000;
+
+}
