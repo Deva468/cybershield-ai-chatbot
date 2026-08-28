@@ -9,51 +9,66 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="container">
+<main class="app-shell">
+    <section class="container" aria-label="CyberShield AI chatbot">
+        <header class="header">
+            <div class="header-top">
+                <div class="brand-lockup">
+                    <span class="brand-mark">🛡️</span>
+                    <div>
+                        <p class="eyebrow">Cyber security awareness</p>
+                        <h1>CyberShield AI</h1>
+                    </div>
+                </div>
+                <button id="clearBtn" class="clear-button" type="button" aria-label="Clear conversation">↺ <span>Clear</span></button>
+            </div>
+            <p class="header-description">Your friendly guide to safer digital habits.</p>
+        </header>
 
-    <div class="header">
-
-    <div class="header-top">
-
-        <h1>🛡 CyberShield AI</h1>
-        
-        <button id="clearBtn">🗑 Clear</button>
-
-    </div>
-    
-
-    <p>Cyber Security Awareness Chatbot</p>
-
-</div>
-
-    <div class="chat-box" id="chatBox">
-
-        <div class="bot-message">
-            👋 Hello! Ask me anything about Cyber Security.
+        <div class="chat-box" id="chatBox">
+            
+            <div class="welcome-panel">
+                <p class="welcome-kicker">Your first line of defense</p>
+                <h2>Learn the signals.<br><em>Protect what matters.</em></h2>
+                <p class="welcome-copy">Ask clear, practical questions about threats, privacy, and everyday online safety.</p>
+                <div class="feature-grid" aria-label="Topics covered">
+                    <span>🔐 Phishing</span><span>🦠 Malware</span><span>🔒 Password security</span><span>🌐 Network security</span>
+                    <span>🎣 Social engineering</span><span>🛡️ Cyber hygiene</span><span>🚨 Ransomware</span><span>🔑 Authentication</span>
+                </div>
+                <div class="suggestions">
+                    <p>Start with a question</p>
+                    <div class="suggestion-list">
+                        <button type="button" onclick="sendMessage('What is phishing?')">What is phishing?</button>
+                        <button type="button" onclick="sendMessage('What is ransomware?')">What is ransomware?</button>
+                        <button type="button" onclick="sendMessage('Difference between HTTP and HTTPS?')">HTTP vs HTTPS?</button>
+                        <button type="button" onclick="sendMessage('How does a firewall work?')">How does a firewall work?</button>
+                        <button type="button" onclick="sendMessage('What is social engineering?')">What is social engineering?</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
+        <form class="input-area" id="chatForm">
+            <input type="text" id="userInput" placeholder="Ask about phishing, malware, ransomware..." autocomplete="off">
+            <button type="submit" aria-label="Send message">Send <span>↗</span></button>
+        </form>
+    </section>
 
-    <div class="input-area">
-
-        <input
-        type="text"
-        id="userInput"
-        placeholder="Ask about phishing, malware, ransomware..."
-        >
-
-        <button onclick="sendMessage()">
-            Send
-        </button>
-
-    </div>
-
-</div>
+    <footer>
+        <span>Built by <b>Devanandh K</b></span>
+        <nav aria-label="External links">
+            <a href="https://github.com/Deva468" target="_blank" rel="noreferrer">GitHub Repository ↗</a>
+            <a href="https://devanandhk.vercel.app/" target="_blank" rel="noreferrer">My Portfolio ↗</a>
+            <a href="www.linkedin.com/in/devanandh-k-csa" target="_blank" rel="noreferrer">My Linkedin ↗</a>
+        </nav>
+    </footer>
+</main>
 
 <script src="data.js"></script>
 <script src="script.js"></script>
-
 </body>
+
 </html>
