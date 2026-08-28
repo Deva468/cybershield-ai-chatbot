@@ -1,5 +1,4 @@
 const chatbotData = [
-
 {
     keyword: "phishing",
     answer: "🎣 Phishing is a social engineering cyber attack where attackers use fake emails, messages, or websites to trick users into revealing sensitive information such as passwords, OTPs, or bank details. Always verify the sender and website before clicking links."
@@ -68,6 +67,21 @@ const chatbotData = [
 {
     keyword: "vpn",
     answer: "🌐 VPN (Virtual Private Network) creates an encrypted connection between your device and a VPN server. It helps protect data from network interception and can hide your IP address from websites and other internet services."
+},
+
+{
+    keyword: "http",
+    answer: "🌐 HTTP sends web data without encryption, while HTTPS adds TLS encryption to protect the connection. Look for HTTPS and the padlock icon before entering passwords, payment details, or other sensitive information."
+},
+
+{
+    keyword: "network security",
+    answer: "🌐 Network Security protects devices, connections, and data moving across a network. Firewalls, secure Wi-Fi settings, segmentation, monitoring, and timely updates all help reduce network risk."
+},
+
+{
+    keyword: "cyber hygiene",
+    answer: "🛡️ Cyber Hygiene is the practice of maintaining healthy security habits, such as using unique passwords, enabling MFA, installing updates, backing up data, and checking links before opening them."
 },
 
 {
@@ -179,6 +193,8 @@ const chatbotData = [
     keyword: "dictionary attack",
     answer: "📖 A Dictionary Attack attempts to guess passwords using a list of commonly used words, passwords, and phrases. Using long, unique, and unpredictable passwords makes dictionary attacks much harder."
 },
+
+
 {
     keyword: "dns",
     answer: "🌐 DNS (Domain Name System) converts human-readable domain names like google.com into IP addresses that computers use to communicate over a network."
@@ -1801,15 +1817,14 @@ const chatbotData = [
 
 
 
-
 {
     keyword: "hi",
-    answer: "👋 Hi! Welcome to CyberShield AI. Ask me any Cyber Security question."
+    answer: "👋 Hi! Welcome to CyberShield. Ask me any Cyber Security question."
 },
 
 {
     keyword: "hello",
-    answer: "👋 Hello! I'm CyberShield AI. How can I help you with Cyber Security today?"
+    answer: "👋 Hello! I'm CyberShield. How can I help you with Cyber Security today?"
 },
 
 {
@@ -1839,12 +1854,12 @@ const chatbotData = [
 
 {
     keyword: "who are you",
-    answer: "🤖 I'm CyberShield AI, a Cyber Security Awareness Chatbot developed to educate users about cyber threats and online safety."
+    answer: "🤖 I'm CyberShield, a Cyber Security Awareness Chatbot developed to educate users about cyber threats and online safety."
 },
 
 {
     keyword: "your name",
-    answer: "🤖 My name is CyberShield AI."
+    answer: "🤖 My name is CyberShield."
 },
 
 {
@@ -1876,4 +1891,236 @@ const chatbotData = [
     keyword: "goodbye",
     answer: "👋 Goodbye! Feel free to come back anytime for Cyber Security help."
 },
+
+
+
+{
+    keyword: "cybersecurity roles",
+    question: "What are the different roles in cybersecurity?",
+    answer: "🛡️ Cybersecurity has many roles such as SOC Analyst, Security Analyst, Penetration Tester, Security Engineer, Incident Responder, Threat Hunter, Cloud Security Engineer, GRC Analyst, and Security Consultant. Each role focuses on a different area of security."
+},
+
+{
+    keyword: "soc analyst",
+    question: "What does a SOC Analyst do?",
+    answer: "👨‍💻 A SOC Analyst monitors security alerts, analyzes logs, investigates suspicious activity, detects threats, and helps respond to security incidents. It is one of the common entry-level cybersecurity roles."
+},
+
+{
+    keyword: "penetration tester",
+    question: "What does a Penetration Tester do?",
+    answer: "🎯 A Penetration Tester legally tests networks, websites, applications, and systems to identify security vulnerabilities before attackers can exploit them. Networking, Linux, web security, and security testing skills are important."
+},
+
+{
+    keyword: "security engineer",
+    question: "What does a Security Engineer do?",
+    answer: "⚙️ A Security Engineer designs, implements, and maintains security controls such as firewalls, endpoint protection, IAM, network security, and monitoring systems to protect an organization's infrastructure."
+},
+
+{
+    keyword: "security analyst",
+    question: "What does a Cybersecurity Analyst do?",
+    answer: "🔍 A Cybersecurity Analyst monitors systems, investigates threats, analyzes security events, identifies vulnerabilities, and helps organizations improve their overall security posture."
+},
+
+{
+    keyword: "incident responder",
+    question: "What does an Incident Responder do?",
+    answer: "🚨 An Incident Responder investigates cybersecurity incidents, contains compromised systems, analyzes evidence, removes threats, and helps restore affected systems to normal operation."
+},
+
+{
+    keyword: "threat hunter",
+    question: "What does a Threat Hunter do?",
+    answer: "🔎 A Threat Hunter proactively searches networks, endpoints, and logs for hidden attacker activity that may not have been detected by normal security alerts."
+},
+
+{
+    keyword: "cloud security",
+    question: "What does a Cloud Security Engineer do?",
+    answer: "☁️ A Cloud Security Engineer protects cloud infrastructure, applications, identities, and data. Important skills include IAM, cloud networking, logging, monitoring, encryption, and secure cloud configuration."
+},
+
+{
+    keyword: "grc",
+    question: "What does a GRC Analyst do?",
+    answer: "📋 GRC stands for Governance, Risk, and Compliance. GRC professionals manage security policies, assess risks, support audits, and help organizations meet security and regulatory requirements."
+},
+
+{
+    keyword: "cybersecurity fresher",
+    question: "How can I start a career in cybersecurity as a fresher?",
+    answer: "🚀 Start with networking, Linux, operating systems, cybersecurity fundamentals, and basic scripting. Then choose a path such as SOC, penetration testing, cloud security, or GRC and build hands-on projects and labs."
+},
+
+{
+    keyword: "cybersecurity roadmap",
+    question: "What should I learn first to become a cybersecurity professional?",
+    answer: "🗺️ Start with computer and networking fundamentals, Linux and Windows basics, security concepts, authentication, common attacks, and basic scripting. After that, specialize in an area such as SOC, penetration testing, cloud security, or application security."
+},
+
+{
+    keyword: "cybersecurity practice",
+    question: "How can I practice cybersecurity skills?",
+    answer: "💻 Practice using legal cybersecurity labs, CTF platforms, virtual machines, and intentionally vulnerable applications. Start with networking and Linux labs, then practice tools such as Nmap, Wireshark, Burp Suite, and SIEM platforms in authorized environments."
+},
+
+{
+    keyword: "cybersecurity labs",
+    question: "Where can I practice cybersecurity hands-on?",
+    answer: "🧪 You can practice using legal training environments, CTFs, vulnerable virtual machines, web security labs, and security learning platforms. Always practice only on systems you own or have explicit permission to test."
+},
+
+{
+    keyword: "cybersecurity projects",
+    question: "What projects should I build for a cybersecurity resume?",
+    answer: "📂 Good beginner projects include a home SOC lab, log monitoring dashboard, password strength analyzer, network traffic analyzer, vulnerability assessment report, phishing awareness tool, or security automation script."
+},
+
+{
+    keyword: "cybersecurity home lab",
+    question: "How can I build a cybersecurity home lab?",
+    answer: "🖥️ You can create a lab using virtual machines with platforms such as VirtualBox or VMware. Set up a Linux security machine, a test system, networking tools, vulnerable applications, and monitoring tools in an isolated environment."
+},
+
+{
+    keyword: "cybersecurity tools",
+    question: "Which tools should a beginner cybersecurity student learn?",
+    answer: "🛠️ Start with tools such as Wireshark, Nmap, Burp Suite, Linux security utilities, and basic SIEM platforms. Learn what each tool does and practice using them in legal lab environments instead of simply memorizing commands."
+},
+
+{
+    keyword: "networking cybersecurity",
+    question: "Why is networking important for cybersecurity?",
+    answer: "🌐 Networking is a core cybersecurity skill because attacks and defenses often involve network communication. Learn TCP/IP, DNS, DHCP, HTTP/HTTPS, ports, routing, firewalls, VPNs, and common network attacks."
+},
+
+{
+    keyword: "linux cybersecurity",
+    question: "Why should I learn Linux for cybersecurity?",
+    answer: "🐧 Linux is widely used in security tools, servers, cloud environments, and penetration-testing labs. Learn the command line, file permissions, processes, networking commands, users, services, and basic shell scripting."
+},
+
+{
+    keyword: "python cybersecurity",
+    question: "Do I need Python for cybersecurity?",
+    answer: "🐍 Python is not mandatory for every cybersecurity role, but it is very useful for automation, log analysis, API interaction, security scripts, data processing, and repetitive tasks."
+},
+
+{
+    keyword: "cybersecurity certification",
+    question: "Which certifications are useful for a cybersecurity career?",
+    answer: "🎓 The best certification depends on your target role. Beginners can consider foundational certifications, while candidates targeting networking, SOC, or penetration testing can choose certifications aligned with those skills. Practical knowledge should come alongside certifications."
+},
+
+{
+    keyword: "ceh",
+    question: "Is CEH useful for starting a cybersecurity career?",
+    answer: "🎓 CEH can help demonstrate knowledge of common ethical-hacking concepts and tools. However, practical labs, networking knowledge, projects, and the ability to explain real security scenarios are also important when applying for jobs."
+},
+
+{
+    keyword: "ccna cybersecurity",
+    question: "Why is networking certification useful for cybersecurity?",
+    answer: "🌐 Networking knowledge is essential for understanding how attacks and defensive controls work. A networking certification such as CCNA can help build strong fundamentals in IP addressing, routing, switching, protocols, and network troubleshooting."
+},
+
+{
+    keyword: "cybersecurity internship",
+    question: "How can I get a cybersecurity internship?",
+    answer: "💼 Build a focused resume with cybersecurity projects, labs, certifications, and relevant technical skills. Apply for SOC, security analyst, penetration-testing, security operations, and IT security internships while improving your practical skills."
+},
+
+{
+    keyword: "cybersecurity resume",
+    question: "What should I include in a cybersecurity resume?",
+    answer: "📄 Highlight cybersecurity projects, internships, certifications, technical skills, labs, and measurable achievements. Mention tools you have actually used and explain what you accomplished with them."
+},
+
+{
+    keyword: "cybersecurity interview",
+    question: "What questions are asked in cybersecurity interviews?",
+    answer: "🎤 Interviews commonly cover networking, operating systems, authentication, common attacks, security tools, incident response, and troubleshooting. Be prepared to explain your projects and describe how you would investigate a security incident."
+},
+
+{
+    keyword: "soc interview",
+    question: "What should I prepare for a SOC Analyst interview?",
+    answer: "🛡️ Prepare networking fundamentals, Windows and Linux basics, logs, SIEM concepts, common attacks, phishing, malware, incident response, IOC analysis, and alert investigation. Practice explaining your investigation process clearly."
+},
+
+{
+    keyword: "penetration testing skills",
+    question: "What skills do I need to become a Penetration Tester?",
+    answer: "🎯 Learn networking, Linux, web applications, authentication, common vulnerabilities, scripting, reconnaissance, vulnerability assessment, and security testing methodology. Most importantly, practice only in authorized environments."
+},
+
+{
+    keyword: "soc analyst skills",
+    question: "What skills do I need to become a SOC Analyst?",
+    answer: "🔍 Focus on networking, Windows and Linux, log analysis, SIEM, EDR concepts, threat intelligence, incident response, phishing analysis, and basic scripting. Strong analytical and communication skills are also important."
+},
+
+{
+    keyword: "cybersecurity career path",
+    question: "Which cybersecurity career path should I choose?",
+    answer: "🧭 Choose based on what you enjoy. SOC focuses on monitoring and incident response, penetration testing focuses on security testing, cloud security focuses on cloud environments, application security focuses on software, and GRC focuses on risk and compliance."
+},
+
+{
+    keyword: "cybersecurity daily practice",
+    question: "How should I practice cybersecurity every day?",
+    answer: "📚 Spend time learning one concept, practicing it in a legal lab, and documenting what you learned. A simple routine can include networking, Linux, security tools, labs, and reading current cybersecurity incidents."
+},
+
+{
+    keyword: "cybersecurity news",
+    question: "How can I keep up with cybersecurity news?",
+    answer: "📰 Follow trusted security advisories, vulnerability databases, vendor security blogs, and reputable cybersecurity news sources. Focus on understanding what happened, which vulnerability was involved, who was affected, and how defenders can reduce the risk."
+},
+
+{
+    keyword: "cybersecurity portfolio",
+    question: "How can I build a strong cybersecurity portfolio?",
+    answer: "💼 Create practical projects, document your labs, publish security write-ups, maintain a GitHub profile, and explain the problem, methodology, tools, findings, and defensive recommendations for each project."
+},
+
+{
+    keyword: "cybersecurity github",
+    question: "What should I put on GitHub for a cybersecurity career?",
+    answer: "🐙 Add security projects, scripts, automation tools, lab documentation, detection rules, write-ups, and learning resources you created. Never upload passwords, API keys, private data, or unauthorized exploit material."
+},
+
+{
+    keyword: "cybersecurity communication",
+    question: "Are communication skills important in cybersecurity?",
+    answer: "🗣️ Yes. Security professionals must explain technical risks, incidents, vulnerabilities, and recommendations to both technical and non-technical people. Good communication is especially important in SOC, consulting, incident response, and GRC roles."
+},
+
+{
+    keyword: "cybersecurity job preparation",
+    question: "How should I prepare for my first cybersecurity job?",
+    answer: "🚀 Build strong networking and security fundamentals, choose a target role, practice hands-on labs, create relevant projects, improve your resume, prepare interview questions, and apply consistently to internships and entry-level roles."
+},
+
+{
+    keyword: "cybersecurity beginner mistakes",
+    question: "What mistakes should beginners avoid in cybersecurity?",
+    answer: "⚠️ Avoid only memorizing commands, ignoring networking fundamentals, collecting certifications without practical skills, testing systems without permission, and copying projects without understanding them. Focus on learning concepts and practicing legally."
+},
+
+{
+    keyword: "cybersecurity salary",
+    question: "How can I increase my value in a cybersecurity career?",
+    answer: "📈 Build strong fundamentals first, then develop specialized skills in areas such as SOC, cloud security, application security, penetration testing, or incident response. Practical experience, projects, certifications, and continuous learning can improve your career opportunities."
+},
+
+{
+    keyword: "cybersecurity specialization",
+    question: "When should I choose a cybersecurity specialization?",
+    answer: "🎯 First learn the fundamentals of networking, operating systems, and security. Once you understand the basics, explore different areas through labs and projects, then choose the specialization that matches your interests and career goals."
+}, 
+
+
 ];
